@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function convertLength(uzunlik,birlik){
+    if(birlik === 'km'){
+      return(`${uzunlik/1.6}mil`)
+    }else if(birlik === 'mil'){
+      return(`${uzunlik*1.6}km`)
+    }else{
+      return(`${uzunlik}km`)
+    }
+  }
+console.log(convertLength(50, 'mil'))
+  console.log(convertLength(32, 'km'))
+  console.log(convertLength(50, ))
+</script>
+</body>
+</html>
